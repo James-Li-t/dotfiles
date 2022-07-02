@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 alias ul="ultralist"
 alias uc="ultralist l due:agenda"
 alias lg="lazygit"
+alias py="python3"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
