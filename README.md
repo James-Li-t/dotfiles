@@ -1,2 +1,5 @@
 # Dotfiles
-My current settings
+**Workspace**
+
+Currently using [Astrovim](https://github.com/AstroNvim/AstroNvim)
+
