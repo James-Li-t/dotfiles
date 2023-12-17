@@ -100,6 +100,8 @@ alias ul="ultralist"
 alias uc="ultralist l due:agenda"
 alias lg="lazygit"
 alias py="python3"
+alias pip="pip3"
+alias vimconf="nvim ~/.config/nvim/lua/user/init.lua"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -109,3 +111,6 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
 fi
 
 export EDITOR="nvim"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
