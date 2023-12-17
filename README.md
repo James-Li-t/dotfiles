@@ -1,5 +1,4 @@
 # Dotfiles
-**Workspace**
+Includes my current [Neovim] and [Alacritty] configurations.
 
-Currently using [Astrovim](https://github.com/AstroNvim/AstroNvim)
 
