@@ -1,0 +1,64 @@
+env:
+  TERM: xterm-256color
+
+window:
+  decorations: buttonless
+  opacity: 1
+
+font:
+  normal:
+    family: "UbuntuMono Nerd Font Mono"
+    style: "Regular"
+  size: 24
+
+# Colors (kanagawabones)
+colors:
+  bright:
+    black: "#3c3c51"
+    blue: "#7bc2df"
+    cyan: "#7bc2df"
+    green: "#9ec967"
+    magenta: "#a98fd2"
+    red: "#ec818c"
+    white: "#a8a48d"
+    yellow: "#f1c982"
+  cursor:
+    cursor: "#e6e0c2"
+    text: "#1f1f28"
+  normal:
+    black: "#1f1f28"
+    blue: "#7eb3c9"
+    cyan: "#7eb3c9"
+    green: "#98bc6d"
+    magenta: "#957fb8"
+    red: "#e46a78"
+    white: "#ddd8bb"
+    yellow: "#e5c283"
+  primary:
+    background: "#1f1f28"
+    foreground: "#ddd8bb"
+  selection:
+    background: "#49473e"
+    text: "#ddd8bb"
+
+scrolling:
+  # How many lines of scrollback to keep,
+  # '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line
+  # scrolled when scrollback is enabled (history > 0).
+  multiplier: 3
+
+key_bindings:
+  - { key: PageUp,   mods: Shift,   action: ScrollPageUp   }
+  - { key: PageDown, mods: Shift,   action: ScrollPageDown }
+  - { key: End,      mods: Shift,   action: ScrollToBottom }
+  - { key: Home,     mods: Shift,   action: ScrollToTop    }
+
+mouse:
+  hints:
+    launcher:
+      # This depends on your OS, on Mac it’s `open`
+      program: open
+    modifiers: Command

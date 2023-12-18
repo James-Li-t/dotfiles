@@ -1,3 +1,7 @@
 /*
 !.gitignore
-!.config/nvim
+
+!/.config
+/.config/*
+!/.config/alacritty
+!/.config/nvim
