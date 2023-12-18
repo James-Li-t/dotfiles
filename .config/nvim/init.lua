@@ -25,7 +25,8 @@ require("lazy").setup("plugins")
 
 require('core.nvim-cmp')
 
-vim.cmd.colorscheme("catppuccin")
+vim.o.background = ""
+vim.cmd.colorscheme("kanagawa-wave")
 
 require("mason").setup()
 require('nvim-ts-autotag').setup()
@@ -40,14 +41,13 @@ require('nvim-autopairs').setup({
 require("nvim-tree").setup({
 })
 
-
 -- OR setup with some options
 require("nvim-tree").setup({
   sort = {
     sorter = "case_sensitive",
   },
   view = {
-    width = 20,
+    width = 25,
   },
   renderer = {
     group_empty = true,
@@ -56,3 +56,5 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+require('feline').setup()
