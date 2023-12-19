@@ -47,12 +47,33 @@ require("bufferline").setup{}
 vim.o.background = ""
 vim.cmd.colorscheme("kanagawa-wave")
 
-require('nvim-ts-autotag').setup()
+require('nvim-ts-autotag').setup({
+  filetypes = {"rust","rs"},
+})
 
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 
 require('nvim-autopairs').setup({
   disable_filetype = { "TelescopePrompt" , "vim" },
+})
+
+local lspconfig = require('lspconfig')
+local configs = require('lspconfig/configs')
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+lspconfig.emmet_ls.setup({
+    -- on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue", "rust", "rs"},
+    init_options = {
+      html = {
+        options = {
+          -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+          ["bem.enabled"] = true,
+        },
+      },
+    }
 })
 
 vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})

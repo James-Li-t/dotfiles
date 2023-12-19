@@ -28,6 +28,7 @@ return {
   {"saadparwaiz1/cmp_luasnip"},
   {'windwp/nvim-autopairs',
     event = "InsertEnter"},
+  {'windwp/nvim-ts-autotag'},
   {"williamboman/mason.nvim"},
   {'williamboman/mason-lspconfig.nvim'},
   {

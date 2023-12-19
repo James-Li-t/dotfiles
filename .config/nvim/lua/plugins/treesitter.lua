@@ -68,6 +68,7 @@ return {
         "markdown_inline",
         "python",
         "query",
+        "rust",
         "regex",
         "toml",
         "tsx",
