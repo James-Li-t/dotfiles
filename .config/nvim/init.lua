@@ -26,6 +26,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("plugins")
 
 require('core.nvim-cmp')
+require("bufferline").setup{}
 
 vim.o.background = ""
 vim.cmd.colorscheme("kanagawa-wave")
