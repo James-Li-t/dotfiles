@@ -26,11 +26,33 @@ return {
   {'windwp/nvim-autopairs',
     event = "InsertEnter"},
   {"williamboman/mason.nvim"},
+  {
+      "nvim-neo-tree/neo-tree.nvim",
+      branch = "v3.x",
+      dependencies = {
+        "nvim-lua/plenary.nvim",
+        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        "MunifTanjim/nui.nvim",
+        "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+      },
+      config = true,
+      keys = {
+      {
+        "<leader>e",
+        function()
+          require("neo-tree.command").execute({
+            toggle = true,
+            source = "filesystem",
+            position = "left",
+            width = "fit_content",
+          })
+        end,
+        desc = "Toggles File Explorer",
+      },
+    },  
+  },
   {"nvim-tree/nvim-tree.lua", 
     opts = {},
-    config = true,
-    keys = {{"<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Opens/Closes File Explorer"}
-    },
   },
   
 }

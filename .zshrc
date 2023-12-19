@@ -101,7 +101,7 @@ alias uc="ultralist l due:agenda"
 alias lg="lazygit"
 alias py="python3"
 alias pip="pip3"
-alias vimconf="nvim ~/.config/nvim/lua/user/init.lua"
+alias vimconf="nvim ~/.config/nvim/init.lua"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
