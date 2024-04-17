@@ -19,13 +19,21 @@ return {
   {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
   {'neovim/nvim-lspconfig'},
   {'hrsh7th/cmp-nvim-lsp'},
+  {
+    "evesdropper/luasnip-latex-snippets.nvim",
+  }, 
   {'hrsh7th/nvim-cmp'},
-  {'L3MON4D3/LuaSnip'},
-
+  {
+    "lervag/vimtex",
+    init = function()
+      -- Use init for configuration, don't use the more common "config".
+    end
+  },
   {"L3MON4D3/LuaSnip"},
   {"rebelot/kanagawa.nvim"},
   {"rafamadriz/friendly-snippets"},
   {"saadparwaiz1/cmp_luasnip"},
+  {"jalvesaq/Nvim-R"},
   {'windwp/nvim-autopairs',
     event = "InsertEnter"},
   {'windwp/nvim-ts-autotag'},

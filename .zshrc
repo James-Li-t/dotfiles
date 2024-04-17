@@ -102,6 +102,7 @@ alias lg="lazygit"
 alias py="python3"
 alias pip="pip3"
 alias vimconf="nvim ~/.config/nvim/init.lua"
+alias matlab="/Applications/MATLAB_R2023b.app/bin/matlab -nojvm -nodesktop"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -110,7 +111,11 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
 
+
 export EDITOR="nvim"
 export PYENV_ROOT="$HOME/.pyenv"
+export MATLABROOT="/Applications/MATLAB_R2023b.app"
+export LD_LIBRARY_PATH="/Applications/MATLAB_R2023b.app/bin/maca64"
+
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"

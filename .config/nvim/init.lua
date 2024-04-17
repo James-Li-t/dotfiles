@@ -6,6 +6,8 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.o.termguicolors = true
 
+vim.g.localleader = ","
+
 vim.o.cmdheight = 0
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -56,6 +58,7 @@ local cmp_autopairs = require('nvim-autopairs.completion.cmp')
 require('nvim-autopairs').setup({
   disable_filetype = { "TelescopePrompt" , "vim" },
 })
+vim.g.vimtex_view_method = 'skim'
 
 local lspconfig = require('lspconfig')
 local configs = require('lspconfig/configs')
